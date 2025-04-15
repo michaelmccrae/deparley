@@ -31,4 +31,4 @@ The app is a [Next.js](https://nextjs.org) project written in TypeScript and dep
 
 ### After practise, you are measured on asking qualifying questions, use of filler words and pauses
 
-![After practise, you are measured on asking qualifying questions, use of filler words and pauses](/lib/readmephotos/scenario.png)
+![After practise, you are measured on asking qualifying questions, use of filler words and pauses](/lib/readmephotos/practise.png)
