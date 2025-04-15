@@ -17,3 +17,12 @@ Service relies on a number of AI APIs:
 # Tech stack
 
 The app is a [Next.js](https://nextjs.org) project written in TypeScript and deployed to [Vercel](https://vercel.com). The site also uses [Supabase](https://www.supabase.com) for the Postgresql database.
+
+
+# How it all works
+
+[Select a scenario](./public/readmephotos/home.png)
+
+[Read scenario and press start when ready to practise](./public/readmephotos/scenario.png)
+
+[After practise, you are measured on asking qualifying questions, use of filler words and pauses](./pulic/readmephots/practise.png)
