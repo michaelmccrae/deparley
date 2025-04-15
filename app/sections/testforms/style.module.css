@@ -1,0 +1,71 @@
+/* BreathComponent.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .title {
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .breathCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #65a9d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: breathAnimation 8s infinite ease-in-out;
+    box-shadow: 0 0 15px rgba(104, 26, 105, 0.7);
+  }
+  
+
+  
+  .instructions {
+    margin-top: 2rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  @keyframes breathAnimation {
+    0%, 100% {
+      transform: scale(1);
+      background-color: #65a9d6;
+    }
+    50% {
+      transform: scale(1.5);
+      background-color: #3d82b8;
+    }
+  }
+
+
+/* just text for breathe */
+
+  .breatheText {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498db; /* Adjust color as needed */
+    animation: breatheText 3s ease-in-out infinite;
+  }
+
+  @keyframes breatheText {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }

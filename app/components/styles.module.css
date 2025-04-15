@@ -1,0 +1,168 @@
+.markyellow {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 225, 0, 0.1),
+      rgba(255, 225, 0, 0.7) 4%,
+      rgba(255, 225, 0, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .markblue {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 94, 255, 0.1),
+      rgba(0, 94, 255, 0.7) 4%,
+      rgba(0, 94, 255, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .fadein {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* chat */
+
+
+/* .chatContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  max-width: 500px;
+  margin-left: 0; 
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+} */
+
+/* fix shifting width */
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  width: 100%; 
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+/* On small screens (like mobile), make it full width */
+@media (max-width: 768px) {
+  .chatContainer {
+    width: 100%;
+  }
+}
+
+.chatBubble {
+  max-width: 90%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+  
+  /* .chatBubble {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 16px;
+  } */
+  
+  .userBubbleNotSimilar {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: #242424;
+  }
+
+  .userBubbleSimilar {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: #242424;
+    position: relative;
+    
+  }
+
+  .botBubble {
+    align-self: flex-end;
+    background-color: #90bdce;
+    color: #242424;
+  }
+
+  .blankBubble {
+    align-self: flex-end;
+    background-color: #ffffff;
+    color: #ffffff;
+  }
+
+  /* fade in for user prompt to respond to question */
+
+  .fadeIn {
+    opacity: 0;
+    animation: fadeIn 5.0s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* removed animation */
+
+/* 
+  .userBubbleSimilar {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: #242424;
+    position: relative;
+    animation: breath 1s 2s ease-in-out;
+  } */
+  
+  /* @keyframes breath {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } */
+  
+  
+/* @keyframes pulse {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.05); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+} */
