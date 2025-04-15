@@ -21,8 +21,8 @@ The app is a [Next.js](https://nextjs.org) project written in TypeScript and dep
 
 # How it all works
 
-[Select a scenario](./public/readmephotos/home.png)
+[Select a scenario](/readmephotos/home.png)
 
-[Read scenario and press start when ready to practise](./public/readmephotos/scenario.png)
+[Read scenario and press start when ready to practise](/readmephotos/scenario.png)
 
-[After practise, you are measured on asking qualifying questions, use of filler words and pauses](./pulic/readmephots/practise.png)
+[After practise, you are measured on asking qualifying questions, use of filler words and pauses](/readmephotos/practise.png)
